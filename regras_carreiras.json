@@ -1,0 +1,654 @@
+{
+  "versao": "1.0",
+  "metodologia": "Modelo educacional heurístico, não validado psicometricamente. Percentuais indicam aderência, não probabilidade de sucesso.",
+  "perguntas": [
+    {
+      "id": "logica",
+      "texto": "Resolver problemas lógicos",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "matematica",
+      "texto": "Matemática e estatística",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "design",
+      "texto": "Design visual e experiência do usuário",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "infra",
+      "texto": "Infraestrutura e sistemas operacionais",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "gestao",
+      "texto": "Gestão, comunicação e negociação",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "codigo",
+      "texto": "Programação e construção de software",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "dados",
+      "texto": "Investigar e organizar dados",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "seguranca",
+      "texto": "Investigar riscos e segurança",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "detalhes",
+      "texto": "Testar detalhes e qualidade",
+      "grupo": "tecnica"
+    },
+    {
+      "id": "produto",
+      "texto": "Entender clientes e necessidades de negócio",
+      "grupo": "objetivos"
+    },
+    {
+      "id": "operacao",
+      "texto": "Atuar com disponibilidade e incidentes",
+      "grupo": "objetivos"
+    },
+    {
+      "id": "mobile",
+      "texto": "Criar experiências para dispositivos móveis",
+      "grupo": "objetivos"
+    }
+  ],
+  "competencias": {
+    "git": {
+      "nome": "Git e colaboração",
+      "estudar": "Commits, branches, pull requests e README",
+      "horas_por_nivel": 8
+    },
+    "python": {
+      "nome": "Python",
+      "estudar": "Tipos, funções, módulos e testes",
+      "horas_por_nivel": 18
+    },
+    "api": {
+      "nome": "APIs e back-end",
+      "estudar": "HTTP, REST, autenticação e validação",
+      "horas_por_nivel": 20
+    },
+    "sql": {
+      "nome": "SQL e modelagem",
+      "estudar": "Consultas, joins e modelagem relacional",
+      "horas_por_nivel": 16
+    },
+    "web": {
+      "nome": "HTML, CSS e JavaScript",
+      "estudar": "Semântica, responsividade, DOM e acessibilidade",
+      "horas_por_nivel": 24
+    },
+    "ux": {
+      "nome": "UX e pesquisa",
+      "estudar": "Entrevistas, protótipos e testes de usabilidade",
+      "horas_por_nivel": 16
+    },
+    "stats": {
+      "nome": "Estatística e aprendizado de máquina",
+      "estudar": "Probabilidade, validação, métricas e prevenção de vazamento",
+      "horas_por_nivel": 28
+    },
+    "etl": {
+      "nome": "Pipelines de dados",
+      "estudar": "ETL, qualidade, orquestração e processamento em lote",
+      "horas_por_nivel": 24
+    },
+    "linux": {
+      "nome": "Linux e redes",
+      "estudar": "Shell, processos, TCP/IP, DNS e HTTP",
+      "horas_por_nivel": 20
+    },
+    "sec": {
+      "nome": "Segurança aplicada",
+      "estudar": "Ameaças, controle de acesso, hardening e laboratórios autorizados",
+      "horas_por_nivel": 24
+    },
+    "docker": {
+      "nome": "Containers e CI/CD",
+      "estudar": "Docker, integração contínua e implantação",
+      "horas_por_nivel": 20
+    },
+    "cloud": {
+      "nome": "Fundamentos de cloud",
+      "estudar": "IAM, redes, armazenamento, custos e disponibilidade",
+      "horas_por_nivel": 24
+    },
+    "observ": {
+      "nome": "Observabilidade",
+      "estudar": "Logs, métricas, alertas, SLOs e incidentes",
+      "horas_por_nivel": 18
+    },
+    "app": {
+      "nome": "Desenvolvimento mobile",
+      "estudar": "Navegação, estado, persistência e consumo de APIs",
+      "horas_por_nivel": 28
+    },
+    "qa": {
+      "nome": "Testes de software",
+      "estudar": "Casos de teste, testes automatizados e relatórios de defeitos",
+      "horas_por_nivel": 20
+    },
+    "pm": {
+      "nome": "Produto e métricas",
+      "estudar": "Discovery, priorização, backlog e métricas de resultado",
+      "horas_por_nivel": 20
+    }
+  },
+  "trilhas": [
+    {
+      "id": "backend",
+      "nome": "Back-end",
+      "pesos": {
+        "logica": 5,
+        "matematica": 2,
+        "design": 0,
+        "infra": 2,
+        "gestao": 1,
+        "codigo": 5,
+        "dados": 2,
+        "seguranca": 2,
+        "detalhes": 3,
+        "produto": 2,
+        "operacao": 2,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "logica",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Resolver problemas lógicos"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "python",
+          "minimo": 2
+        },
+        {
+          "id": "sql",
+          "minimo": 2
+        },
+        {
+          "id": "api",
+          "minimo": 2
+        },
+        {
+          "id": "qa",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Fundamentos de programação e bancos de dados (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "API de biblioteca com autenticação, banco relacional, testes e documentação"
+    },
+    {
+      "id": "frontend",
+      "nome": "Front-end/UX",
+      "pesos": {
+        "logica": 3,
+        "matematica": 0,
+        "design": 5,
+        "infra": 0,
+        "gestao": 2,
+        "codigo": 4,
+        "dados": 0,
+        "seguranca": 0,
+        "detalhes": 3,
+        "produto": 4,
+        "operacao": 0,
+        "mobile": 1
+      },
+      "penalidades": [
+        {
+          "atributo": "design",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Design visual e experiência do usuário"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "web",
+          "minimo": 2
+        },
+        {
+          "id": "ux",
+          "minimo": 2
+        },
+        {
+          "id": "api",
+          "minimo": 2
+        },
+        {
+          "id": "qa",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Formação introdutória em acessibilidade e UX (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Interface acessível de catálogo com protótipo, integração de API e testes de usabilidade"
+    },
+    {
+      "id": "cientista",
+      "nome": "Cientista de Dados",
+      "pesos": {
+        "logica": 4,
+        "matematica": 5,
+        "design": 1,
+        "infra": 0,
+        "gestao": 2,
+        "codigo": 4,
+        "dados": 5,
+        "seguranca": 0,
+        "detalhes": 3,
+        "produto": 3,
+        "operacao": 0,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "matematica",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Matemática e estatística"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "python",
+          "minimo": 2
+        },
+        {
+          "id": "sql",
+          "minimo": 2
+        },
+        {
+          "id": "stats",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Formação introdutória em estatística e ciência de dados (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Análise de dados públicos com baseline, validação e relatório de limitações"
+    },
+    {
+      "id": "engenheiro",
+      "nome": "Engenheiro de Dados",
+      "pesos": {
+        "logica": 5,
+        "matematica": 3,
+        "design": 0,
+        "infra": 3,
+        "gestao": 1,
+        "codigo": 5,
+        "dados": 5,
+        "seguranca": 1,
+        "detalhes": 4,
+        "produto": 1,
+        "operacao": 3,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "logica",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Resolver problemas lógicos"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "python",
+          "minimo": 2
+        },
+        {
+          "id": "sql",
+          "minimo": 2
+        },
+        {
+          "id": "etl",
+          "minimo": 2
+        },
+        {
+          "id": "cloud",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Fundamentos de engenharia de dados e cloud (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Pipeline de dados públicos com validação, agendamento e monitoramento"
+    },
+    {
+      "id": "cyber",
+      "nome": "Cibersegurança",
+      "pesos": {
+        "logica": 4,
+        "matematica": 2,
+        "design": 0,
+        "infra": 5,
+        "gestao": 2,
+        "codigo": 3,
+        "dados": 2,
+        "seguranca": 5,
+        "detalhes": 5,
+        "produto": 1,
+        "operacao": 4,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "infra",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Infraestrutura e sistemas operacionais"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "linux",
+          "minimo": 2
+        },
+        {
+          "id": "python",
+          "minimo": 2
+        },
+        {
+          "id": "sec",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Certificação introdutória em segurança da informação (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Laboratório local autorizado com hardening, análise de logs e relatório de riscos"
+    },
+    {
+      "id": "devops",
+      "nome": "DevOps/SRE",
+      "pesos": {
+        "logica": 4,
+        "matematica": 1,
+        "design": 0,
+        "infra": 5,
+        "gestao": 3,
+        "codigo": 4,
+        "dados": 2,
+        "seguranca": 3,
+        "detalhes": 4,
+        "produto": 1,
+        "operacao": 5,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "infra",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Infraestrutura e sistemas operacionais"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "linux",
+          "minimo": 2
+        },
+        {
+          "id": "docker",
+          "minimo": 2
+        },
+        {
+          "id": "cloud",
+          "minimo": 2
+        },
+        {
+          "id": "observ",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Fundamentos de Linux, containers e cloud (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Serviço com pipeline CI/CD, monitoramento, SLO e simulação local de incidente"
+    },
+    {
+      "id": "cloud",
+      "nome": "Cloud Architecture",
+      "pesos": {
+        "logica": 4,
+        "matematica": 2,
+        "design": 1,
+        "infra": 5,
+        "gestao": 4,
+        "codigo": 2,
+        "dados": 2,
+        "seguranca": 4,
+        "detalhes": 3,
+        "produto": 3,
+        "operacao": 5,
+        "mobile": 0
+      },
+      "penalidades": [
+        {
+          "atributo": "infra",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Infraestrutura e sistemas operacionais"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "linux",
+          "minimo": 2
+        },
+        {
+          "id": "cloud",
+          "minimo": 2
+        },
+        {
+          "id": "sec",
+          "minimo": 2
+        },
+        {
+          "id": "observ",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Certificação de fundamentos de um provedor cloud (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Arquitetura documentada com diagrama, estimativa de custos e recuperação de falhas"
+    },
+    {
+      "id": "mobile",
+      "nome": "Mobile",
+      "pesos": {
+        "logica": 4,
+        "matematica": 1,
+        "design": 4,
+        "infra": 0,
+        "gestao": 2,
+        "codigo": 5,
+        "dados": 1,
+        "seguranca": 1,
+        "detalhes": 3,
+        "produto": 4,
+        "operacao": 1,
+        "mobile": 5
+      },
+      "penalidades": [
+        {
+          "atributo": "codigo",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Programação e construção de software"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "app",
+          "minimo": 2
+        },
+        {
+          "id": "api",
+          "minimo": 2
+        },
+        {
+          "id": "ux",
+          "minimo": 2
+        },
+        {
+          "id": "qa",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Formação introdutória em desenvolvimento mobile (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Aplicativo de hábitos com persistência offline, acessibilidade e testes"
+    },
+    {
+      "id": "qa",
+      "nome": "QA",
+      "pesos": {
+        "logica": 5,
+        "matematica": 1,
+        "design": 1,
+        "infra": 2,
+        "gestao": 3,
+        "codigo": 4,
+        "dados": 2,
+        "seguranca": 2,
+        "detalhes": 5,
+        "produto": 3,
+        "operacao": 2,
+        "mobile": 1
+      },
+      "penalidades": [
+        {
+          "atributo": "logica",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Resolver problemas lógicos"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "qa",
+          "minimo": 2
+        },
+        {
+          "id": "python",
+          "minimo": 2
+        },
+        {
+          "id": "api",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Certificação introdutória em fundamentos de testes (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Plano de testes e suíte automatizada de uma aplicação de demonstração"
+    },
+    {
+      "id": "product",
+      "nome": "Product Management",
+      "pesos": {
+        "logica": 2,
+        "matematica": 2,
+        "design": 3,
+        "infra": 0,
+        "gestao": 5,
+        "codigo": 1,
+        "dados": 3,
+        "seguranca": 1,
+        "detalhes": 3,
+        "produto": 5,
+        "operacao": 1,
+        "mobile": 2
+      },
+      "penalidades": [
+        {
+          "atributo": "gestao",
+          "abaixo_de": 3,
+          "pontos": 10,
+          "motivo": "Baixa afinidade com uma dimensão central: Gestão, comunicação e negociação"
+        }
+      ],
+      "requisitos": [
+        {
+          "id": "git",
+          "minimo": 2
+        },
+        {
+          "id": "ux",
+          "minimo": 2
+        },
+        {
+          "id": "pm",
+          "minimo": 2
+        },
+        {
+          "id": "sql",
+          "minimo": 2
+        }
+      ],
+      "certificacoes": [
+        "Formação introdutória em gestão de produto (opcional; verificar oferta e requisitos antes de contratar)"
+      ],
+      "projeto": "Estudo de produto com entrevistas simuladas identificadas, backlog e plano de métricas"
+    }
+  ]
+}
